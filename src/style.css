@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   @font-face {
     font-family: "Inter";
-    src: url("./assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf") format('truetype');
+    src: url("./assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf")
+      format("truetype");
   }
-  
-  
+
   @font-face {
     font-family: "Martian Mono";
-    src: url("./assets/fonts/martian-mono/MartianMono-VariableFont_wdth,wght.ttf") format('truetype');
+    src: url("./assets/fonts/martian-mono/MartianMono-VariableFont_wdth,wght.ttf")
+      format("truetype");
   }
 }
