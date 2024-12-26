@@ -1,18 +1,216 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <link rel="stylesheet" href="/src/style.css" />
+    <title>Tech book club</title>
+  </head>
 
-  <title> Tech book club </title>
-</head>
+  <body class="bg-white font-inter text-neutral-700">
+    <main class="overflow-y-hidden">
+      <section
+        class="bg-pattern-light relative overflow-hidden bg-neutral-100 bg-cover pb-20 pl-6 tablet:gap-y-16 tablet:pt-8 desktop:gap-y-20"
+      >
+        <!-- glow effect -->
+        <div
+          class="bg-pattern-glow absolute -bottom-48 -right-48 h-[42rem] w-[42rem] bg-cover"
+          aria-hidden="true"
+        ></div>
+        <div class="mx-auto grid w-[90%] max-w-7xl gap-y-12">
+          <header>
+            <img src="/src/assets/images/logo.svg" alt="logo" />
+          </header>
 
-<body class="font-body bg-white">
-  <p class="bg-neutral-900"> Hello Tailwind </p>
-  <div class="p-8 bg-gradient"></div>
-</body>
+          <div
+            class="grid items-center gap-8 desktop:grid-cols-2 desktop:gap-16"
+          >
+            <div class="grid gap-8">
+              <div class="grid gap-6">
+                <h1
+                  class="bg-text-gradient bg-clip-text font-martian text-[2.375rem] font-bold text-transparent tablet:text-[3.875rem]"
+                >
+                  Join the ultimate tech book club
+                </h1>
+                <p class="text-xl">
+                  Turn your reading time into learning time with fellow tech
+                  enthusiasts. Get curated recommendations, join vibrant
+                  discussions, and level up your skills one chapter at a time.
+                </p>
+              </div>
+
+              <div class="grid gap-5">
+                <button
+                  class="flex max-w-fit items-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 font-martian text-base font-semibold uppercase tablet:text-lg"
+                >
+                  <span> Review membership option </span>
+                  <img src="/src/assets/images/icon-arrow-down.svg" alt="" />
+                </button>
+
+                <!-- Testimonial -->
+                <div class="flex items-center gap-3">
+                  <img
+                    src="/src/assets/images/image-avatars.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+
+                  <div>
+                    <div class="flex">
+                      <img
+                        src="/src/assets/images/icon-star.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <img
+                        src="/src/assets/images/icon-star.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <img
+                        src="/src/assets/images/icon-star.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <img
+                        src="/src/assets/images/icon-star.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <img
+                        src="/src/assets/images/icon-star.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </div>
+
+                    <span class="font-martian text-sm">
+                      200+ developers joined already
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <picture class="relative z-10">
+              <source
+                srcset="/src/assets/images/image-hero-desktop.webp"
+                media="(min-width: 79.625em)"
+              />
+              <source
+                srcset="/src/assets/images/image-hero-tablet.webp"
+                media="(min-width: 48em)"
+              />
+
+              <img
+                class="rounded-lg"
+                src="/src/assets/images/image-hero-mobile.webp"
+                alt="A guy and two girls are reading books by the table."
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <div class="mx-auto grid w-[90%] max-w-7xl py-[7.5rem]">
+        <section
+          class="grid grid-cols-1 items-center gap-x-20 gap-y-10 desktop:grid-cols-2"
+        >
+          <div
+            class="grid gap-x-20 gap-y-[1.5rem] tablet:gap-y-[2.125rem] desktop:order-2"
+          >
+            <h2
+              class="font-martian text-[2.125rem] font-semibold text-neutral-900 tablet:text-[3.125rem]"
+            >
+              Read together, grow together
+            </h2>
+            <ul class="tablet: grid gap-y-4 tablet:gap-y-6">
+              <li
+                class="flex gap-4 text-xl before:content-[url('/src/assets/images/icon-check.svg')]"
+              >
+                Monthly curated tech reads selected by industry experts
+              </li>
+              <li
+                class="flex gap-4 text-xl before:content-[url('/src/assets/images/icon-check.svg')]"
+              >
+                Virtual and in-person meetups for deep-dive discussions
+              </li>
+              <li
+                class="flex gap-4 text-xl before:content-[url('/src/assets/images/icon-check.svg')]"
+              >
+                Early access to new tech book releases
+              </li>
+              <li
+                class="flex gap-4 text-xl before:content-[url('/src/assets/images/icon-check.svg')]"
+              >
+                Author Q&A sessions with tech thought leaders
+              </li>
+            </ul>
+          </div>
+
+          <picture class="desktop:order-1">
+            <source
+              srcset="/src/assets/images/image-read-together-desktop.webp"
+              media="(min-width: 79.625em)"
+            />
+            <source
+              srcset="/src/assets/images/image-read-together-tablet.webp"
+              media="(min-width: 48em)"
+            />
+
+            <img
+              class="rounded-[1.25rem]"
+              src="/src/assets/images/image-read-together-mobile.webp"
+              alt="A group of people sitting in a circle reading with smiles on their faces."
+            />
+          </picture>
+        </section>
+
+        <section
+          class="grid grid-cols-1 items-center gap-x-20 gap-y-10 desktop:grid-cols-2"
+        >
+          <div
+            class="grid gap-x-20 gap-y-[1.5rem] tablet:gap-y-[2.125rem] desktop:order-1"
+          >
+            <h2
+              class="font-martian text-[2.125rem] font-semibold text-neutral-900 tablet:text-[3.125rem]"
+            >
+              <span> Not your average book </span>
+              <span
+                class="relative overflow-visible bg-[url(/src/assets/images/pattern-circle.png)] bg-cover bg-no-repeat"
+              >
+                club
+              </span>
+            </h2>
+            <p class="text-xl">
+              Connect with a community that speaks your language - from Python
+              to TypeScript and everything in between. Our discussions blend
+              technical depth with practical applications.
+            </p>
+          </div>
+
+          <picture class="desktop:order-2">
+            <source
+              srcset="/src/assets/images/image-not-average-desktop.webp"
+              media="(min-width: 79.625em)"
+            />
+            <source
+              srcset="/src/assets/images/image-not-average-tablet.webp"
+              media="(min-width: 48em)"
+            />
+
+            <img
+              class="rounded-[1.25rem]"
+              src="/src/assets/images/image-not-average-mobile.webp"
+              alt="A group of people sitting in a circle reading with smiles on their faces."
+            />
+          </picture>
+        </section>
+      </div>
+      <footer class=""></footer>
+    </main>
+  </body>
 </html>
