@@ -13,11 +13,11 @@
   <body class="bg-white font-inter text-neutral-700">
     <main class="overflow-y-hidden">
       <section
-        class="bg-pattern-light relative overflow-hidden bg-neutral-100 bg-cover pb-20 pl-6 tablet:gap-y-16 tablet:pt-8 desktop:gap-y-20"
+        class="relative overflow-hidden bg-neutral-100 bg-pattern-light bg-cover pb-20 pl-6 tablet:gap-y-16 tablet:pt-8 desktop:gap-y-20"
       >
         <!-- glow effect -->
         <div
-          class="bg-pattern-glow absolute -bottom-48 -right-48 h-[42rem] w-[42rem] bg-cover"
+          class="absolute -bottom-48 -right-48 h-[42rem] w-[42rem] bg-pattern-glow bg-cover"
           aria-hidden="true"
         ></div>
         <div class="mx-auto grid w-[90%] max-w-7xl gap-y-12">
@@ -115,7 +115,9 @@
         </div>
       </section>
 
-      <div class="mx-auto grid w-[90%] max-w-7xl py-[7.5rem]">
+      <div
+        class="mx-auto grid w-[90%] max-w-7xl gap-y-16 py-[7.5rem] tablet:gap-y-20 desktop:gap-y-[7.5rem]"
+      >
         <section
           class="grid grid-cols-1 items-center gap-x-20 gap-y-10 desktop:grid-cols-2"
         >
@@ -170,7 +172,7 @@
         </section>
 
         <section
-          class="grid grid-cols-1 items-center gap-x-20 gap-y-10 desktop:grid-cols-2"
+          class="relative grid grid-cols-1 items-center gap-x-20 gap-y-10 desktop:grid-cols-2 desktop:before:absolute desktop:before:bottom-8 desktop:before:left-1/2 desktop:before:-translate-x-1/2 desktop:before:content-[url(/src/assets/images/logos-tech.svg)]"
         >
           <div
             class="grid gap-x-20 gap-y-[1.5rem] tablet:gap-y-[2.125rem] desktop:order-1"
@@ -208,6 +210,144 @@
               alt="A group of people sitting in a circle reading with smiles on their faces."
             />
           </picture>
+        </section>
+
+        <section class="grid gap-6 tablet:gap-10 desktop:gap-16">
+          <h2
+            class="font-martian text-[2.125rem] font-semibold text-neutral-900 tablet:text-[3.125rem]"
+          >
+            Membership options
+          </h2>
+
+          <ul
+            class="grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] items-center gap-x-6 gap-y-6"
+          >
+            <li>
+              <article
+                class="grid gap-y-8 rounded-lg border-2 border-neutral-200 p-6"
+              >
+                <div class="grid gap-y-6 divide-y">
+                  <header class="grid gap-y-6">
+                    <h3
+                      class="font-martian text-2xl font-semibold text-neutral-900"
+                    >
+                      Starter
+                    </h3>
+
+                    <p class="text-xl">
+                      <span
+                        class="text-[2.125rem] font-semibold text-neutral-900"
+                        >$19</span
+                      >
+                      / month
+                    </p>
+                  </header>
+
+                  <ul class="grid gap-4 pt-6">
+                    <li
+                      class="flex gap-3 text-xl before:content-[url('/src/assets/images/icon-check.svg')]"
+                    >
+                      1 book/month
+                    </li>
+                    <li
+                      class="flex gap-3 text-xl before:content-[url('/src/assets/images/icon-check.svg')]"
+                    >
+                      Online forums
+                    </li>
+                  </ul>
+                </div>
+
+                <button
+                  class="flex justify-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 text-center font-martian text-base font-semibold uppercase tablet:text-lg"
+                >
+                  <span> Subscribe now </span>
+                  <img src="/src/assets/images/icon-arrow-down.svg" alt="" />
+                </button>
+              </article>
+            </li>
+            <li>
+              <article
+                class="grid gap-y-8 rounded-lg border-2 border-neutral-200 bg-neutral-100 bg-pattern-glow bg-left-top p-6 desktop:py-10"
+              >
+                <div class="grid gap-y-6 divide-y">
+                  <header class="grid gap-y-6">
+                    <h3
+                      class="font-martian text-2xl font-semibold text-neutral-900"
+                    >
+                      Pro
+                    </h3>
+
+                    <p class="text-xl">
+                      <span
+                        class="text-[2.125rem] font-semibold text-neutral-900"
+                        >$29</span
+                      >
+                      / month
+                    </p>
+                  </header>
+
+                  <ul class="grid gap-4 pt-6">
+                    <li
+                      class="flex gap-3 text-xl before:content-[url('/src/assets/images/icon-check.svg')]"
+                    >
+                      2 book/month
+                    </li>
+                    <li
+                      class="flex gap-3 text-xl before:content-[url('/src/assets/images/icon-check.svg')]"
+                    >
+                      Virtual meetups
+                    </li>
+                  </ul>
+                </div>
+
+                <button
+                  class="flex justify-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 text-center font-martian text-base font-semibold uppercase tablet:text-lg"
+                >
+                  <span> Subscribe now </span>
+                  <img src="/src/assets/images/icon-arrow-down.svg" alt="" />
+                </button>
+              </article>
+            </li>
+            <li>
+              <article
+                class="grid gap-y-8 rounded-lg border-2 border-neutral-200 p-6"
+              >
+                <div class="grid gap-y-6 divide-y">
+                  <header class="grid gap-y-6">
+                    <h3
+                      class="font-martian text-2xl font-semibold text-neutral-900"
+                    >
+                      Enterprise
+                    </h3>
+
+                    <span class="text-[2.125rem] font-semibold text-neutral-900"
+                      >Custom</span
+                    >
+                  </header>
+
+                  <ul class="grid gap-4 pt-6">
+                    <li
+                      class="flex gap-3 text-xl before:content-[url('/src/assets/images/icon-check.svg')]"
+                    >
+                      Team access
+                    </li>
+                    <li
+                      class="flex gap-3 text-xl before:content-[url('/src/assets/images/icon-check.svg')]"
+                    >
+                      Private sessions
+                    </li>
+                  </ul>
+                </div>
+
+                <button
+                  class="flex justify-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 text-center font-martian text-base font-semibold uppercase tablet:text-lg"
+                >
+                  <span> Talk to us </span>
+                  <img src="/src/assets/images/icon-arrow-down.svg" alt="" />
+                </button>
+              </article>
+            </li>
+          </ul>
         </section>
       </div>
       <footer class=""></footer>
