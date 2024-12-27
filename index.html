@@ -13,14 +13,14 @@
   <body class="bg-white font-inter text-neutral-700">
     <main class="overflow-y-hidden">
       <section
-        class="relative overflow-hidden bg-neutral-100 bg-pattern-light bg-cover pb-20 pl-6 tablet:gap-y-16 tablet:pt-8 desktop:gap-y-20"
+        class="relative overflow-hidden bg-neutral-100 bg-pattern-light bg-cover pb-20 pt-6 tablet:gap-y-16 tablet:pt-8 desktop:gap-y-20"
       >
         <!-- glow effect -->
         <div
           class="absolute -bottom-48 -right-48 h-[42rem] w-[42rem] bg-pattern-glow bg-cover"
           aria-hidden="true"
         ></div>
-        <div class="mx-auto grid w-[90%] max-w-7xl gap-y-12">
+        <div class="mx-auto grid w-almost-full max-w-7xl gap-y-12">
           <header>
             <img src="/src/assets/images/logo.svg" alt="logo" />
           </header>
@@ -44,7 +44,7 @@
 
               <div class="grid gap-5">
                 <button
-                  class="flex max-w-fit items-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 font-martian text-base font-semibold uppercase tablet:text-lg"
+                  class="active:shadow-button-active flex max-w-fit items-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 font-martian text-base font-semibold uppercase hover:bg-custom-gradient focus:bg-custom-gradient tablet:text-lg"
                 >
                   <span> Review membership option </span>
                   <img src="/src/assets/images/icon-arrow-down.svg" alt="" />
@@ -53,6 +53,7 @@
                 <!-- Testimonial -->
                 <div class="flex items-center gap-3">
                   <img
+                    class="h-12"
                     src="/src/assets/images/image-avatars.webp"
                     alt=""
                     aria-hidden="true"
@@ -116,7 +117,7 @@
       </section>
 
       <div
-        class="mx-auto grid w-[90%] max-w-7xl gap-y-16 py-[7.5rem] tablet:gap-y-20 desktop:gap-y-[7.5rem]"
+        class="mx-auto grid w-almost-full max-w-7xl gap-y-16 py-[7.5rem] tablet:gap-y-20 desktop:gap-y-[7.5rem]"
       >
         <section
           class="grid grid-cols-1 items-center gap-x-20 gap-y-10 desktop:grid-cols-2"
@@ -125,7 +126,7 @@
             class="grid gap-x-20 gap-y-[1.5rem] tablet:gap-y-[2.125rem] desktop:order-2"
           >
             <h2
-              class="font-martian text-[2.125rem] font-semibold text-neutral-900 tablet:text-[3.125rem]"
+              class="font-martian text-[2.125rem] font-semibold text-neutral-900 tablet:text-50px"
             >
               Read together, grow together
             </h2>
@@ -178,7 +179,7 @@
             class="grid gap-x-20 gap-y-[1.5rem] tablet:gap-y-[2.125rem] desktop:order-1"
           >
             <h2
-              class="font-martian text-[2.125rem] font-semibold text-neutral-900 tablet:text-[3.125rem]"
+              class="font-martian text-[2.125rem] font-semibold text-neutral-900 tablet:text-50px"
             >
               <span> Not your average book </span>
               <span
@@ -212,9 +213,66 @@
           </picture>
         </section>
 
+        <section
+          class="relative hidden gap-y-16 overflow-hidden rounded-xl bg-neutral-100 bg-pattern-light px-[3.75rem] py-20 font-martian font-semibold text-neutral-900 desktop:grid"
+        >
+          <h2 class="text-center text-50px">Your tech reading journey</h2>
+          <ol class="z-10 flex gap-x-12">
+            <li
+              class="relative grid gap-y-6 text-lg before:absolute before:right-0 before:content-[url('/src/assets/images/pattern-arrow.svg')]"
+            >
+              <span
+                class="aspect-square w-max rounded border-2 border-current p-2 text-center text-2xl font-normal"
+                aria-hidden="true"
+              >
+                1
+              </span>
+              Choose your membership tier
+            </li>
+            <li
+              class="relative grid gap-y-6 text-lg before:absolute before:right-0 before:content-[url('/src/assets/images/pattern-arrow.svg')]"
+            >
+              <span
+                class="aspect-square w-max rounded border-2 border-current p-2 text-center text-2xl font-normal"
+                aria-hidden="true"
+              >
+                2
+              </span>
+              Get your monthly book selection
+            </li>
+            <li
+              class="relative grid gap-y-6 text-lg before:absolute before:right-0 before:content-[url('/src/assets/images/pattern-arrow.svg')]"
+            >
+              <span
+                class="aspect-square w-max rounded border-2 border-current p-2 text-center text-2xl font-normal"
+                aria-hidden="true"
+              >
+                3
+              </span>
+              Join our discussion forums
+            </li>
+            <li
+              class="text-lg[url('/src/assets/images/pattern-arrow.svg')] relative grid gap-y-6 before:absolute before:right-0 before:content-[url('/src/assets/images/pattern-arrow.svg')]"
+            >
+              <span
+                class="aspect-square w-max rounded border-2 border-current p-2 text-center text-2xl font-normal"
+                aria-hidden="true"
+              >
+                4
+              </span>
+              Attend exclusive meetups
+            </li>
+          </ol>
+          <!-- glow effect -->
+          <div
+            class="absolute -right-60 top-32 h-[42rem] w-[42rem] bg-pattern-glow bg-cover"
+            aria-hidden="true"
+          ></div>
+        </section>
+
         <section class="grid gap-6 tablet:gap-10 desktop:gap-16">
           <h2
-            class="font-martian text-[2.125rem] font-semibold text-neutral-900 tablet:text-[3.125rem]"
+            class="font-martian text-[2.125rem] font-semibold text-neutral-900 tablet:text-50px"
           >
             Membership options
           </h2>
@@ -258,7 +316,7 @@
                 </div>
 
                 <button
-                  class="flex justify-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 text-center font-martian text-base font-semibold uppercase tablet:text-lg"
+                  class="active:shadow-button-active flex justify-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 text-center font-martian text-base font-semibold uppercase hover:bg-custom-gradient focus:bg-custom-gradient tablet:text-lg"
                 >
                   <span> Subscribe now </span>
                   <img src="/src/assets/images/icon-arrow-down.svg" alt="" />
@@ -301,7 +359,7 @@
                 </div>
 
                 <button
-                  class="flex justify-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 text-center font-martian text-base font-semibold uppercase tablet:text-lg"
+                  class="Hover:bg-custom-gradient active:shadow-button-active flex justify-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 text-center font-martian text-base font-semibold uppercase hover:bg-custom-gradient focus:bg-custom-gradient tablet:text-lg"
                 >
                   <span> Subscribe now </span>
                   <img src="/src/assets/images/icon-arrow-down.svg" alt="" />
@@ -340,7 +398,7 @@
                 </div>
 
                 <button
-                  class="flex justify-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 text-center font-martian text-base font-semibold uppercase tablet:text-lg"
+                  class="active:shadow-button-active flex justify-center gap-4 rounded-lg border-4 border-neutral-900 bg-light-salmon-50 px-6 py-5 text-center font-martian text-base font-semibold uppercase hover:bg-custom-gradient focus:bg-custom-gradient tablet:text-lg"
                 >
                   <span> Talk to us </span>
                   <img src="/src/assets/images/icon-arrow-down.svg" alt="" />
@@ -349,8 +407,136 @@
             </li>
           </ul>
         </section>
+
+        <section class="grid gap-y-8 desktop:justify-items-center">
+          <div class="flex">
+            <img
+              src="/src/assets/images/icon-star.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              src="/src/assets/images/icon-star.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              src="/src/assets/images/icon-star.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              src="/src/assets/images/icon-star.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              src="/src/assets/images/icon-star.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <blockquote
+            class="font-martian text-34px font-semibold text-neutral-900 desktop:text-center"
+          >
+            "This book club transformed my technical reading from a solitary
+            activity into an enriching community experience. The discussions are
+            gold!"
+          </blockquote>
+
+          <p class="text-xl">
+            Sarah Chen, <cite class="not-italic"> Software Architect </cite>
+          </p>
+        </section>
       </div>
-      <footer class=""></footer>
+      <footer
+        class="bg-neutral-900 bg-pattern-dark pt-12 font-martian tablet:pt-16 desktop:pt-20"
+      >
+        <div
+          class="mx-auto grid w-almost-full gap-y-16 text-center tablet:w-full desktop:max-w-max"
+        >
+          <div class="grid justify-center gap-y-10">
+            <h2
+              class="text-34px font-semibold text-neutral-50 tablet:text-50px"
+            >
+              Ready to debug your reading list?
+            </h2>
+            <div class="grid justify-center gap-y-6 text-white">
+              <button
+                class="active:shadow-ft-button-active flex items-center justify-center gap-4 rounded-lg border-4 border-white px-6 py-5 font-martian text-base font-semibold uppercase hover:bg-gradient-to-r hover:from-neutral-700 hover:to-neutral-900 focus:bg-gradient-to-r focus:from-neutral-700 focus:to-neutral-900 tablet:text-lg"
+              >
+                <span> Review membership option </span>
+                <img src="/src/assets/images/icon-arrow-up.svg" alt="" />
+              </button>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="h-12"
+                  src="/src/assets/images/image-avatars.webp"
+                  alt=""
+                  aria-hidden="true"
+                />
+
+                <div>
+                  <div class="flex">
+                    <img
+                      src="/src/assets/images/icon-star.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      src="/src/assets/images/icon-star.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      src="/src/assets/images/icon-star.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      src="/src/assets/images/icon-star.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      src="/src/assets/images/icon-star.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </div>
+
+                  <span class="font-martian text-sm text-current">
+                    200+ developers joined already
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-y-4 border-t-2 border-t-neutral-700 py-6 text-sm text-white tablet:flex-row tablet:justify-between tablet:px-8 desktop:px-0"
+          >
+            <span> &copy; 2024 - Tech Book Club </span>
+            <nav aria-label="social platforms">
+              <ul class="flex justify-center gap-x-6">
+                <li class="cursor-pointer hover:opacity-50 focus:opacity-50">
+                  <img
+                    src="/src/assets/images/logo-bluesky.svg"
+                    alt="bluesky"
+                  />
+                </li>
+                <li class="cursor-pointer hover:opacity-50 focus:opacity-50">
+                  <img
+                    src="/src/assets/images/logo-linkedin.svg"
+                    alt="linkedin"
+                  />
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
