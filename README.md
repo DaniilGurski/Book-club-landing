@@ -1,6 +1,6 @@
 # Tech book club landing page solution
 
-Tech book club landing page styled made with tailwind css.
+Tech book club landing page made with tailwind css.
 
 ## Table of contents
 
