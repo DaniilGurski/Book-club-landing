@@ -14,6 +14,15 @@ export default {
         martian: ["Martian Mono", "mono"],
       },
 
+      fontSize: {
+        "50px": "3.125rem",
+        "34px": "2.125rem",
+      },
+
+      width: {
+        "almost-full": "90%",
+      },
+
       colors: {
         neutral: {
           900: "hsl(194, 78%, 11%)",
@@ -36,6 +45,13 @@ export default {
         "pattern-light": "url('/src/assets/images/pattern-light-bg.svg')",
         "pattern-dark": "url('/src/assets/images/pattern-dark-bg.svg')",
         "pattern-glow": "url('/src/assets/images/pattern-glow.svg')",
+      },
+
+      boxShadow: {
+        "button-active":
+          "0px 0px 0px 4px white, 0px 0px 0px 8px hsl(195, 23%, 28%)",
+        "ft-button-active":
+          "0px 0px 0px 4px hsl(194, 78%, 11%), 0px 0px 0px 8px white",
       },
     },
   },
